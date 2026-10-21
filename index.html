@@ -30,40 +30,27 @@
     <div class="container">
       <div class="site-header__top">
         <a href="#" class="site-header__logo" aria-label="Mobiliar Startseite">
-          <img src="assets/img/logo.svg" alt="Die Mobiliar" />
+          <span class="site-header__logo-tile">
+            <img src="assets/img/logo.svg" alt="Die Mobiliar" />
+          </span>
         </a>
         <nav class="segment-nav">
-          <a href="#" class="segment-nav__link is-active">Privatkunden</a>
+          <a href="#" class="segment-nav__link is-active">Privatpersonen</a>
           <a href="#" class="segment-nav__link">Unternehmen</a>
-        </nav>
-        <div class="site-header__utility">
-          <button class="header-action" aria-label="Suche">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-            <span>Suche</span>
-          </button>
-          <button class="header-action" aria-label="Login">
+          <a href="#" class="segment-nav__link">Über uns</a>
+          <a href="#" class="segment-nav__link segment-nav__link--icon" aria-label="Login">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <span>Login</span>
-          </button>
-          <div class="lang-switch">
-            <span class="lang-switch__current">DE</span>
-            <span class="lang-switch__chev">&#9662;</span>
-          </div>
-        </div>
+          </a>
+        </nav>
       </div>
       <div class="site-header__bottom">
+        <button class="header-icon" aria-label="Suche">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
         <nav class="main-nav">
-          <button class="main-nav__item">Versicherungen <span class="chev">&#9662;</span></button>
-          <button class="main-nav__item">Vorsorge <span class="chev">&#9662;</span></button>
-          <button class="main-nav__item">Hypotheken <span class="chev">&#9662;</span></button>
-          <button class="main-nav__item">Services &amp; Schaden <span class="chev">&#9662;</span></button>
-          <button class="main-nav__item main-nav__item--spaced">Über uns <span class="chev">&#9662;</span></button>
+          <button class="main-nav__item">Services &amp; Kontakt <span class="chev">&#9662;</span></button>
+          <button class="main-nav__item">Angebot <span class="chev">&#9662;</span></button>
         </nav>
-        <a href="#" class="agency-link">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-7.5-8-13a8 8 0 0 1 16 0c0 5.5-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg>
-          Generalagentur finden
-        </a>
-      </div>
     </div>
   </header>
 
@@ -82,90 +69,80 @@
   <section class="hero">
     <div class="hero__media" aria-hidden="true"></div>
     <div class="container hero__container">
-      <div class="hero__card">
-        <h1>Das Leben leben – mit der Mobiliar an Ihrer Seite.</h1>
-        <p>Von der ersten Wohnung bis zur Pensionierung: Wir begleiten Sie durch jede Lebensphase mit persönlicher Beratung vor Ort.</p>
-        <div class="hero__ctas">
-          <a href="#" class="btn btn--primary">Prämie berechnen</a>
-          <a href="#" class="btn btn--outline">Beratung vereinbaren</a>
-        </div>
-      </div>
+      <a href="#" class="hero__card">
+        <span class="hero__eyebrow">Ratgeber</span>
+        <h1>Wie schütze ich mich vor Einbrüchen?</h1>
+        <span class="hero__arrow" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </a>
     </div>
   </section>
 
-  <!-- Service tiles -->
-  <section class="section section--light">
+  <!-- Online Services -->
+  <section class="section section--tinted">
     <div class="container">
-      <h2 class="section__title">Online Services nutzen.</h2>
-      <p class="section__lead">Rund um die Uhr für Sie verfügbar – schnell, einfach und sicher.</p>
-      <div class="service-grid">
-        <a href="#" class="service-tile service-tile--red">
-          <div class="service-tile__icon">
-            <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#9a1818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M24 6l16 8v10c0 10-7 16-16 18-9-2-16-8-16-18V14z"/>
-              <path d="M18 24l4 4 8-8"/>
+      <h2 class="section__title section__title--red">Online Services nutzen</h2>
+      <div class="services-row">
+        <a href="#" class="service-card service-card--teal">
+          <h3>Möchten Sie eine Prämie berechnen?</h3>
+          <div class="service-card__icon">
+            <svg width="80" height="80" viewBox="0 0 64 64" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="16" y="10" width="32" height="44" rx="3"/>
+              <rect x="20" y="16" width="24" height="8" rx="1"/>
+              <circle cx="24" cy="32" r="2"/>
+              <circle cx="32" cy="32" r="2"/>
+              <circle cx="40" cy="32" r="2"/>
+              <circle cx="24" cy="40" r="2"/>
+              <circle cx="32" cy="40" r="2"/>
+              <circle cx="40" cy="40" r="2"/>
+              <circle cx="24" cy="48" r="2"/>
+              <circle cx="32" cy="48" r="2"/>
+              <circle cx="40" cy="48" r="2"/>
             </svg>
           </div>
-          <h3>Schaden melden</h3>
-          <p>Melden Sie Ihren Schaden online – jederzeit und von überall.</p>
+          <span class="service-card__cta">
+            Prämie berechnen
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
         </a>
-        <a href="#" class="service-tile service-tile--teal">
-          <div class="service-tile__icon">
-            <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#005561" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="10" y="8" width="28" height="32" rx="3"/>
-              <path d="M14 16h20"/>
-              <path d="M16 24h4M22 24h4M28 24h4"/>
-              <path d="M16 30h4M22 30h4M28 30h4"/>
-              <path d="M16 36h16"/>
+        <a href="#" class="service-card service-card--green">
+          <h3>Ist ein Schaden passiert?</h3>
+          <div class="service-card__icon">
+            <svg width="90" height="90" viewBox="0 0 64 64" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="20,14 36,10 44,22 50,34 42,46 30,52 18,46 14,32"/>
+              <polyline points="28,24 24,34 32,34 28,46"/>
             </svg>
           </div>
-          <h3>Prämie berechnen</h3>
-          <p>Berechnen Sie Ihre Prämie unverbindlich in wenigen Minuten.</p>
+          <span class="service-card__cta">
+            Schaden melden
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
         </a>
-        <a href="#" class="service-tile service-tile--sand">
-          <div class="service-tile__icon">
-            <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#8a5a1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M8 20a6 6 0 0 1 6-6h14a6 6 0 0 1 6 6v6a6 6 0 0 1-6 6h-6l-8 6v-6a6 6 0 0 1-6-6z"/>
-              <path d="M22 26a10 10 0 0 1 10-10h4a6 6 0 0 1 6 6v6a6 6 0 0 1-6 6h-2l6 6-8-6h-4"/>
-            </svg>
+        <div class="service-list">
+          <div class="service-list__item service-list__item--highlight">
+            <div>
+              <strong>24 h Soforthilfe</strong>
+              <div class="service-list__phone">00800 16 16 16 16</div>
+            </div>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           </div>
-          <h3>Beratung</h3>
-          <p>Kontaktieren Sie uns für eine persönliche Beratung in Ihrer Nähe.</p>
-        </a>
-        <a href="#" class="service-tile service-tile--mint">
-          <div class="service-tile__icon">
-            <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#0f5a45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="24" cy="24" r="18"/>
-              <path d="M24 14v10l7 4"/>
-            </svg>
-          </div>
-          <h3>Kundenportal</h3>
-          <p>Verwalten Sie Ihre Verträge und Dokumente online im Mein Portal.</p>
-        </a>
-      </div>
-
-      <div class="portal-grid">
-        <a href="#" class="portal-tile">
-          <div class="portal-tile__icon">
-            <svg width="52" height="52" viewBox="0 0 48 48" fill="none" stroke="#da2323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 10h24a2 2 0 0 1 2 2v24a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V12a2 2 0 0 1 2-2z"/>
-              <path d="M18 20h12M18 26h12M18 32h8"/>
-            </svg>
-          </div>
-          <h3>Mein Portal</h3>
-          <p>Alle Verträge, Dokumente und Rechnungen auf einen Blick – wann und wo Sie wollen.</p>
-        </a>
-        <a href="#" class="portal-tile">
-          <div class="portal-tile__icon">
-            <svg width="52" height="52" viewBox="0 0 48 48" fill="none" stroke="#da2323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="14" y="6" width="20" height="36" rx="3"/>
-              <path d="M20 10h8"/>
-              <circle cx="24" cy="36" r="1.5" fill="#da2323"/>
-            </svg>
-          </div>
-          <h3>Mobiliar App</h3>
-          <p>Schaden melden, Beraterin kontaktieren, Dokumente einsehen – direkt vom Smartphone.</p>
-        </a>
+          <a href="#" class="service-list__item">
+            <span>Adressänderung melden</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="#" class="service-list__item">
+            <span>Police einsehen &amp; anpassen</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="#" class="service-list__item">
+            <div>
+              <strong>Alle Online-Dienste</strong>
+              <div class="service-list__sub">Weitere digitale Services nutzen</div>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -234,7 +211,9 @@
   <footer class="site-footer">
     <div class="container site-footer__grid">
       <div class="site-footer__brand">
-        <img src="assets/img/logo.svg" alt="Die Mobiliar" class="site-footer__logo" />
+        <span class="site-footer__logo-wrap">
+          <img src="assets/img/logo.svg" alt="Die Mobiliar" class="site-footer__logo" />
+        </span>
         <p>Die älteste Versicherung &amp; Vorsorge in der Schweiz – seit 1826.</p>
       </div>
       <div class="site-footer__col">
